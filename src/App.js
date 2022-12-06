@@ -2,10 +2,14 @@
 import react from 'react';
 
 // import component navbar
-import Navbar from './component/navbar.jsx'
+import Navbar from './component/navbar'
 
-// impoer component section jumbotron
-import Jumbotron from './component/jumbotron.jsx'
+// import component section jumbotron
+import Jumbotron from './component/jumbotron'
+
+
+// import component content 
+import Content from './component/content'
 
 function App() {
 
@@ -17,6 +21,8 @@ function App() {
        <Navbar/>
        {/* component jumbotron */}
        <Jumbotron/>
+       {/* component content */}
+       <Content/>
       </section>
     </>
   );
