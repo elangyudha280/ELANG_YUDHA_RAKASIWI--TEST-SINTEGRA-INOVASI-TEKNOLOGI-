@@ -1,25 +1,43 @@
 
+// import component title jumbotron
+import TitleJumbotron from './jumbotronItem/titleJumbotron'
+
+// import component input search  jumbotron
+import InputSearchJumbotron from './jumbotronItem/inputSearch'
+
+
 // import component container item
 import IconContainerItem from './jumbotronItem/iconContainerItem'
+
+// import component sub title jumbotron
+import SubTitleJumbotron from './jumbotronItem/subTitleJumbotron'
+
+// import component sub icon jumbotron
+import SubIconJumbotron from './jumbotronItem/subIconJumbotron'
+
+
+
+
 
 // component jumbotron
 const Jumbotron = ()=>{
     return(
-       <section className="jumbotron px-2 py-[100px] relative w-full  border-2 border-slate-900 bg-[url('./travel.jpg')] bg-cover bg-no-repeat bg-center">
-        
-         <div className="container-jumbotron max-w-4xl border-2 p-2 mx-auto">
+       <section className="jumbotron px-2 pt-[100px] pb-5 relative w-full  bg-[url('./travel.jpg')] bg-cover bg-no-repeat bg-center">
+         <div className="container-jumbotron max-w-4xl  p-2 mx-auto">
+             {/* component title section */}
+             <TitleJumbotron/>
+
              {/* component input search */}
-            <h2 className="title-jumbotron text-lg  w-max py-2 px-4 rounded-md mx-auto bg-white/70 backdrop-sm text-red-600 font-bold">
-                Otewe yuk !
-            </h2>
-            <div className="input-group grid grid-cols-[auto_1fr] auto-rows-auto overflow-hidden max-w-sm mx-auto mt-3 rounded-full h-[40px]  bg-white">
-                <div className="icon-search w-[45px] h-full  grid place-items-center">
-                <i className="fa-solid fa-magnifying-glass text-md"></i>
-                </div>
-                <input type="text" name="" id="" placeholder='Search...' className="w-full h-full focus:outline-none   active:border-0 active:outline-0 border-0 outline-0 pr-5 text-sm" />
-            </div>
+            <InputSearchJumbotron/>
+
            {/* component icon travel */}
            <IconContainerItem />
+
+           {/* component Sub title section */}
+           <SubTitleJumbotron/>
+
+           {/* component sub icon jumbotron */}
+           <SubIconJumbotron/>
          </div>
          
          
