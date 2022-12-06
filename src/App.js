@@ -16,7 +16,7 @@ function App() {
 
   return (
     <>
-      <section className="main relative w-full h-[300vh] bg-slate-100 font-poppins">
+      <section className="main relative w-full h-auto pb-8 bg-slate-100 font-poppins">
        {/* component navbar */}
        <Navbar/>
        {/* component jumbotron */}
