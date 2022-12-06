@@ -16,6 +16,7 @@ function App() {
        {/* component navbar */}
        <Navbar/>
        {/* component jumbotron */}
+       <Jumbotron/>
       </section>
     </>
   );
